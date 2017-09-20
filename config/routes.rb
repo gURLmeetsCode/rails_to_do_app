@@ -4,9 +4,9 @@ Rails.application.routes.draw do
       member do
         patch :complete
       end
-    end 
+    end
   end
 
   # setting route to home page/ index controller
-  root "todo_lists#index"
+  root "todo_lists#index", as: 'home'
 end
