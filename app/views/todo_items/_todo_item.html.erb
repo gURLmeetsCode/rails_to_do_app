@@ -23,6 +23,9 @@
 			<p><%= todo_item.content %></p>
 		</div>
 		<div>
+			<p>Priority: <%= todo_item.priority_number.floor %></p>
+		</div>
+		<div>
 			<%= link_to todo_list_todo_item_path(@todo_list, todo_item.id), method: :delete, data: { confirm: "Are you sure?" } do %>
 				<i class="fa fa-trash"></i>
 			<% end %>
